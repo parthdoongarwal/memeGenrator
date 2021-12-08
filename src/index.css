@@ -1,13 +1,343 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+    margin:0;
+  padding:0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  height:100vh;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  html{
+    margin:0;
+  padding:0;
+  margin:0;
+  padding:0;
+  background:url("https://images.unsplash.com/photo-1591871937573-74dbba515c4c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+  background-size: 300px 200px;
+  background-position: center;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .App{
+   
+  border-radius: 15px;
+  
+    padding:10px;
+  height:95vh;
+  width:70vw;
+  
+  }
+  
+  #header{
+    border-radius:10px ;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:0;
+  padding:0;
+  width:100%;
+  border-bottom:5px solid black;
+  height:20%;
+  margin-bottom:auto;
+  
+  }
+  
+  #header img{
+    width:80px;
+    
+  }
+  
+  #hc1{
+    margin:50px;
+    display:flex;
+  }
+  
+  
+  
+  
+  
+  .dark{
+    background:black;
+  color:white;
+  }
+  
+  .white{
+    background:white;
+    color:black;
+  }
+  
+  
+  .toggle-con-white{
+  width:65px;
+  height:30px;
+  background:black;
+  border-radius: 35px;;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 1000ms;
+  }
+  
+  .toggle-con-black{
+    transition: 1000ms;
+    width:65px;
+    height:30px;
+    background:red;
+    border-radius: 35px;;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+  }
+  
+  #ball{
+    margin:5px;
+  background:white;
+  width:30%;
+  border-radius: 100%;
+  height:60%;
+  }
+  
+  
+  #toggle-fog{
+    display:flex;
+  }
+  
+  #main-con{
+    border-radius: 10px;
+    box-shadow: 30px 30px 20px red;
+    height:80%;
+    animation-name: car;
+    animation-iteration-count: infinite;
+  animation-duration: 5s;
+  }
+  
+  @keyframes car {
+    0%{
+      box-shadow: 30px 30px 20px red;
+    }
+  
+  
+    50%{
+      box-shadow: 30px 30px 20px blue;
+  
+    }
+  
+  
+  100%{
+    box-shadow: 30px 30px 20px green;
+  
+  }
+  
+  }
+  
+  
+  #main-con form{
+    padding-top:50px;
+  
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  
+  #main-con form input{
+    border-radius: 5px;
+    font-size:20px;
+  padding:10px;
+  width:30%;
+  border:1px solid gray;
+  outline:none;
+  margin:0 50px 0 50px;
+  }
+  
+  
+  #for-button{
+  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  #meme-but{
+    box-shadow: 10px 20px #bfbfbf;
+    width:55%;
+    padding:20px;
+    border-radius: 10px;
+    margin-top:10px;
+    border:none;
+    font-size: 20px;
+    transition: 100ms;
+  }
+  
+  #meme-but:active{
+    box-shadow: none;
+  }
+  
+  #for-image{
+    padding:40px;
+  
+    height:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  
+  
+  #nci {
+  width:100%;
+  height:100%;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  #ci{
+  
+  
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  
+  #ci img{
+    border-radius: 15px;
+    position: relative;
+    width:60%;
+    height:90%;
+  }
+  
+  #nci image{
+  
+    position: relative;
+  
+  }
+  
+  #sss{
+    border-radius: 15px;
+  margin-top:50px;
+    width:90%;
+   height:110%;
+  
+  }
+  
+  .font{
+   
+    max-width:100%;
+    position: absolute;
+    font-size: 5vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  
+  #bottomte{
+   
+    bottom:-20%;
+   
+  color:white;
+  height:auto;
+  background:white;
+  color:black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding:5px;
+  }
+  
+  
+  #topt{
+    top:-3%;
+    height:auto;
+    border-radius: 10px;
+  padding:5px;
+  
+    display:flex;
+  justify-content: center;
+  align-items: center;
+  
+    
+    background:white;
+    
+  color:black;
+  
+  }
+  
+  @media(max-width:900px){
+  form{
+    flex-direction: column;
+  
+  }
+  
+  #main-con form input{
+     margin-bottom: 30px;
+    width:90%;
+    
+  
+    
+  }
+  
+  .font{
+  font-size:25px;
+  }
+  
+  
+  #for-image{
+  
+    flex-direction: column-reverse;
+  }
+  
+  #ci img{
+    width:100%;
+  }
+  
+  #ci{
+  margin-top:100px;
+  }
+  
+  #nci{
+    margin-top:20px;
+  }
+  
+  .App{
+    
+    height:auto;
+  }
+  
+  #sss{
+    width:100%;
+  
+  }
+  
+  #header{
+    margin-top:85vh;
+    flex-direction: column;
+  }
+  
+  }
+  
